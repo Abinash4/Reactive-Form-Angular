@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BasicFormComponent } from './basic-form/basic-form.component';
+import { MaterialFormComponent } from './material-form/material-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicFormComponent
+    BasicFormComponent,
+    MaterialFormComponent
   ],
   imports: [
     BrowserModule,
