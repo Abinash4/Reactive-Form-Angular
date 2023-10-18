@@ -1,1 +1,28 @@
-<p>material-form works!</p>
+<form>
+    <mat-form-field>
+      <input matInput placeholder="First Name" name="firstName">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Last Name" name="lastName">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <textarea matInput placeholder="Address" name="address"></textarea>
+    </mat-form-field>
+  
+    <!-- <mat-radio-group name="gender">
+      <mat-radio-button value="male">Male</mat-radio-button>
+      <mat-radio-button value="female">Female</mat-radio-button>
+    </mat-radio-group> -->
+  
+    <mat-select placeholder="Country" name="country">
+      <mat-option value="usa">United States</mat-option>
+      <mat-option value="canada">Canada</mat-option>
+      <!-- Add more options as needed -->
+    </mat-select>
+  
+    <mat-checkbox name="subscribe">Subscribe to newsletter</mat-checkbox>
+  
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>

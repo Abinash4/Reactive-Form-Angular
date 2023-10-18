@@ -5,6 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BasicFormComponent } from './basic-form/basic-form.component';
 import { MaterialFormComponent } from './material-form/material-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatRadioGroup, MatRadioModule } from '@angular/material/radio';
+import { MatCheckboxModule, MAT_CHECKBOX_CLICK_ACTION } from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
+
 
 @NgModule({
   declarations: [
@@ -14,7 +24,12 @@ import { MaterialFormComponent } from './material-form/material-form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule, MatButtonModule, 
+    MatFormFieldModule,MatRadioGroup, MatRadioModule ,
+    MatSelectModule,MatDatepickerModule,MatCheckboxModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

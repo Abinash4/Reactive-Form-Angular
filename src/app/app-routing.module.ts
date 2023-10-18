@@ -9,6 +9,9 @@ const routes: Routes = [
   },
   {
     path:'reister',component:BasicFormComponent
+  },
+  {
+    path:'reister',component:BasicFormComponent
   }
 ];
 

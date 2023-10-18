@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-material-form',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MaterialFormComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private fb: FormBuilder) {
+    this.form = this.fb.group({
+      firstName: [''],
+      lastName: [''],
+      address: [''],
+      gender: [''],
+      country: [''],
+      subscribe: [false],
+    });
+  }
   ngOnInit(): void {
+  }
+
+  form: FormGroup;
+
+
+  onSubmit() {
+    // Handle form submission here
+    console.log(this.form.value);
   }
 
 }
