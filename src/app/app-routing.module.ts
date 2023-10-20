@@ -12,7 +12,7 @@ const routes: Routes = [
     path:'matReister',component:MaterialFormComponent
   },
   {
-    path:'',component:BasicFormComponent
+    path:'*',component:BasicFormComponent
   },
 ];
 

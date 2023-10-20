@@ -19,7 +19,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   declarations: [
     AppComponent,
     BasicFormComponent,
-    MaterialFormComponent
+    MaterialFormComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -27,7 +28,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BrowserAnimationsModule,
     MatInputModule, MatButtonModule, 
     MatFormFieldModule,
-    MatSelectModule,MatDatepickerModule,MatCheckboxModule
+    MatSelectModule,MatDatepickerModule,MatCheckboxModule,
 
   ],
   providers: [],
