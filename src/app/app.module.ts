@@ -12,6 +12,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 // import { MatRadioGroup, MatRadioModule } from '@angular/material/radio';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { Form1Component } from './form1/form1.component';
 
 
 
@@ -19,7 +20,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   declarations: [
     AppComponent,
     BasicFormComponent,
-    MaterialFormComponent
+    MaterialFormComponent,
+    Form1Component,
+    
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     BrowserAnimationsModule,
     MatInputModule, MatButtonModule, 
     MatFormFieldModule,
-    MatSelectModule,MatDatepickerModule,MatCheckboxModule
+    MatSelectModule,MatDatepickerModule,MatCheckboxModule,
 
   ],
   providers: [],
